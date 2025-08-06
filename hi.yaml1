@@ -1,0 +1,15 @@
+name: print Hi
+
+on:
+pull_request:
+branches:
+-main
+
+jops:
+print_hi:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+- run:
+echo "Hi"
+
